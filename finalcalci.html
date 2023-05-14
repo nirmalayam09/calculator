@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<span id="afterOp"> </span>
+		</div>
+		<div class="display">
+			<span id="result">0</span>
+		</div>
+		<div class="buttons">
+			<button id="clear" onclick="clean()">AC</button>
+			<button id="mod" onclick="operatorClick('%')">%</button>
+			<button id="square" onclick="square()">x²</button>
+			<button id="divide" onclick="operatorClick('/')">/</button>
+			<button id="seven" onclick="displayScreen('7')">7</button>
+			<button id="eight" onclick="displayScreen('8')">8</button>
+			<button id="nine" onclick="displayScreen('9')">9</button>
+			<button id="multiply" onclick="operatorClick('*')">*</button>
+			<button id="four" onclick="displayScreen('4')">4</button>
+			<button id="five" onclick="displayScreen('5')">5</button>
+			<button id="six" onclick="displayScreen('6')">6</button>
+			<button id="subtract" onclick="operatorClick('-')">-</button>
+			<button id="one" onclick="displayScreen('1')">1</button>
+			<button id="two" onclick="displayScreen('2')">2</button>
+			<button id="three" onclick="displayScreen('3')">3</button>
+			<button id="add" onclick="operatorClick('+')">+</button>
+			<button id="zero" onclick="displayScreen('0')">0</button>
+			<button id="decimal" onclick='displayScreen(".")'>.</button>
+			<button id="equal" onclick="handleEqualClick()">=</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
